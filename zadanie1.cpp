@@ -207,6 +207,39 @@ public:
 };
 
 int main() {
+    cout << "ZADANIE 1: " << endl;
+    ListStack s;
+    s.push(1);
+    s.push(2);
+    s.push(3);
+    cout << "Stos przed odwroceniem: "; s.print();
+    s.reverse();
+    cout << "Stos po odwroceniu:     "; s.print();
+
+    cout << "\nZADANIE 2: " << endl;
+    ArrayStack a, b;
+    a.push(1); a.push(3); a.push(5);
+    b.push(2); b.push(4); b.push(6);
+    ArrayStack c = mergeStacks(a, b);
+    cout << "Scalony stos: "; c.print();
+
+    cout << "\nZADANIE 3: " << endl;
+    FloatQueue fq;
+    fq.enqueue(1.1);
+    fq.enqueue(2.2);
+    fq.enqueue(3.3);
+    cout << "Zawartosc kolejki: "; fq.print();
+    fq.dequeue();
+    cout << "Po usunieciu pierwszego: "; fq.print();
+
+    cout << "\nZADANIE 4: Kolejka napisow (listowa)" << endl;
+    StringQueue sq;
+    sq.enqueue("hello");
+    sq.enqueue("world");
+    sq.enqueue("algorytm");
+    cout << "Zawartosc kolejki: "; sq.print();
+    cout << "Czy zawiera 'world'? " << (sq.find("world") ? "tak" : "nie") << endl;
+    cout << "Czy zawiera 'test'?  " << (sq.find("test") ? "tak" : "nie") << endl;
 
     return 0;
 }
