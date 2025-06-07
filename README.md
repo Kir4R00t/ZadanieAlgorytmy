@@ -7,7 +7,7 @@ Ver: ```g++.exe (Rev4, Built by MSYS2 project) 15.1.0```
 <br>
 
 ```bash
-g++ -o zadanie zadanie.cpp
+g++ -o zadanie zadanie1.cpp
 ./zadanie
 ```
 
